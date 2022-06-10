@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+:root {
+    --primary-color: #ff9100;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --lose-color: #dc3545;
+    --win-color: #28a745;
+    --modal-duration: 1s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Joan', serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.restart-btn {
+    display: none;
+    background: var(--light-color);
+    color: #333;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.restart-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.header h1 {
+    margin-bottom: 1rem;
+}
+
+.scores {
+    display: flex;
+    margin: 0 50px 0 0;
+}
+
+.scores p.score {
+    margin: auto;
+    color: #fff;
+}
+
+.scores p:first-child {
+    background: var(--primary-color);
+    padding: 0 5rem;
+    border-top-left-radius: 1.25rem;
+}
+
+.scores p:last-child {
+    background: var(--dark-color);
+    padding: 0 5rem;
+    border-top-right-radius: 1.25rem;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.choice {
+    cursor: pointer;
+}
+
+.choice:hover {
+    color: var(--primary-color);
+}
+
+.text-win {
+    color: var(--win-color);
+}
+
+.text-lose {
+    color: var(--lose-color);
+}
+
+.instructions {
+    background: #80808062;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+@media (max-width: 700px) {
+    .choice {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 500px) {
+    .choice {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    .scores p:first-child {
+        padding: 0 3rem;
+    }
+
+    .scores p:last-child {
+        padding: 0 2rem;
+    }
+}

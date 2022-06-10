@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/51ae76029c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Rock Paper Scissors Game</h1>
+            <button class="restart-btn js-restart-btn">Restart Game</button>
+            <div class="scores js-score">
+                <p class="score">Player: 0</p>
+                <p class="score"> Computer: 0</p>
+            </div>
+        </header>
+        <h2>Make your Selection</h2>
+        <div class="choices">
+            <i class="choice fas fa-hand-rock fa-10x " id="rock"></i>
+            <i class="choice fas fa-hand-paper fa-10x" id="paper"></i>
+            <i class="choice fas fa-hand-scissors fa-10x" id="scissors"></i>
+        </div>
+
+        <div class="instructions"> 
+            <h3>-- Instructions --</h3>
+        <p> Players start each round by clicking, 
+            “rock, paper, or scissors” Once clicked, 
+            the computer makes a selection, player holds out their fist for rock, 
+            flat hand for paper, or their index and 
+            middle finger for scissors. 
+            Rock crushes scissors, scissors cut paper,
+             and paper covers rock. See who wins each round!</p>
+        </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal js-modal">
+        <div class="modal-result js-result">
+            <h1 class="text-win">You win</h1>
+            <i class="fas fa-hand-rock fa-10x"></i>
+            <p>Computer Chose Rock</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
